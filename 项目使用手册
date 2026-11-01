@@ -1,0 +1,20 @@
+启动仿真指令
+cd /home/leo/Documents/move_car/ros2_ws
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+export ROS_DOMAIN_ID=42
+ros2 launch move_car_simulation simulation.launch.py
+
+你会看到gazebo启动，并且机器人会出现
+
+如果你想控制小车前进
+
+打开第二个终端
+
+source /opt/ros/humble/setup.bash
+source /home/leo/Documents/move_car/ros2_ws/install/setup.bash
+export ROS_DOMAIN_ID=42
+ros2 topic pub -r 10 /cmd_vel geometry_msgs/msg/Twist \
+  "{linear: {x: 0.1, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
+你会看到小车前进

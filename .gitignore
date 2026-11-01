@@ -1,0 +1,30 @@
+# ROS2/colcon generated directories
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+build/
+install/
+log/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# ROS runtime artifacts
+*.bag
+*.db3
+metadata.yaml
+
+# Obsidian machine-local workspace layout
+docs/.obsidian/workspace*.json
