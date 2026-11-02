@@ -28,3 +28,7 @@ metadata.yaml
 
 # Obsidian machine-local workspace layout
 docs/.obsidian/workspace*.json
+
+# Generated TF graph artifacts
+ros2_ws/frames_*.gv
+ros2_ws/frames_*.pdf
